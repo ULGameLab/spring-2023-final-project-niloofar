@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638140121833215541
-    m_Hash: 2278514377
+      ticks: 638144301087383750
+    m_Hash: 2480440239
   m_LockFileStatus:
     m_FilePath: C:/Users/VR Student/Desktop/spring-2023-final-project-niloofar/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638140121833270472
-    m_Hash: 1452380815
+      ticks: 638144301087658788
+    m_Hash: 2596593121
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -746,14 +746,18 @@ m_ResolvedPackages:
     - 1.7.1
     - 1.7.2
     - 1.7.3
+    - 1.7.4
     - 1.8.0
     - 1.8.1
+    - 1.8.2
     compatible:
     - 1.7.2
     - 1.7.3
+    - 1.7.4
     - 1.8.0
     - 1.8.1
-    recommended: 1.7.3
+    - 1.8.2
+    recommended: 1.7.4
     deprecated: []
   dependencies:
   - name: com.unity.modules.director
@@ -1033,6 +1037,108 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 4.2.0
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+- packageId: com.unity.xr.mock-hmd@1.3.1-preview.1
+  testable: 0
+  isDirectDependency: 1
+  version: 1.3.1-preview.1
+  source: 1
+  resolvedPath: C:\Users\VR Student\Desktop\spring-2023-final-project-niloofar\Library\PackageCache\com.unity.xr.mock-hmd@1.3.1-preview.1
+  assetPath: Packages/com.unity.xr.mock-hmd
+  name: com.unity.xr.mock-hmd
+  displayName: MockHMD XR Plugin
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: asset
+  description: Provides rendering and input support for XR MockHMD.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.0.0-preview.1
+    - 1.0.0-preview.2
+    - 1.0.1-preview.3
+    - 1.0.1-preview.4
+    - 1.0.1-preview.5
+    - 1.0.1-preview.6
+    - 1.0.1-preview.7
+    - 1.1.0-preview.1
+    - 1.1.1-preview.1
+    - 1.1.2-preview.1
+    - 1.1.3-preview.1
+    - 1.2.0-preview.1
+    - 1.3.0-preview.1
+    - 1.3.1-preview.1
+    compatible:
+    - 1.0.0-preview.1
+    - 1.0.0-preview.2
+    - 1.0.1-preview.3
+    - 1.0.1-preview.4
+    - 1.0.1-preview.5
+    - 1.0.1-preview.6
+    - 1.0.1-preview.7
+    - 1.1.0-preview.1
+    - 1.1.1-preview.1
+    - 1.1.2-preview.1
+    - 1.1.3-preview.1
+    - 1.2.0-preview.1
+    - 1.3.0-preview.1
+    - 1.3.1-preview.1
+    recommended: 
+    deprecated: []
+  dependencies:
+  - name: com.unity.xr.management
+    version: 4.0.1
+  resolvedDependencies:
+  - name: com.unity.xr.management
+    version: 4.2.0
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.vr
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.10
+  - name: com.unity.subsystemregistration
+    version: 1.1.1
+  keywords:
+  - mock-hmd
+  - xr
+  - reality
+  - xreditorsubsystem
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 638097381770000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.xr.mock-hmd@1.3/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/xr.sdk.mock-hmd.git
+    revision: 62660dd52929e393c321309dcf65d3d4725fb41a
+    path: 
+  unityLifecycle:
+    version: 
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -4420,8 +4526,10 @@ m_ResolvedPackages:
     - 2.0.2
     - 3.0.1
     - 3.0.2
+    - 3.1.0
     compatible:
     - 3.0.2
+    - 3.1.0
     recommended: 3.0.2
     deprecated: []
   dependencies: []
