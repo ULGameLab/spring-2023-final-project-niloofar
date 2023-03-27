@@ -18,7 +18,7 @@ public class sword : MonoBehaviour
         {
             //GameObject.Find(victim.name)
             StartCutting();
-            Debug.Log("Hello!");
+           // Debug.Log("Hello!");
             //check for previous project collision!
         }
     }
