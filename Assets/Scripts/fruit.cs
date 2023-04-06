@@ -30,8 +30,19 @@ public class fruit : MonoBehaviour
 
              StartCoroutine(PlayAndDestroy(1.0f));
         }
-       
-    }
+        if (collision.gameObject.CompareTag("Player"))
+        {
+
+            playerInventory playerInventory = collision.gameObject.GetComponent<playerInventory>();
+
+            if (playerInventory != null)
+            {
+                playerInventory.FruitCollected();
+
+           }
+        }
+
+        }
     private IEnumerator PlayAndDestroy(float waitTime)
     {
        

@@ -3024,22 +3024,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 458136331}
-    - targetCorrespondingSourceObject: {fileID: 7666448512491557995, guid: 6eb18d9d451e45e4bb30bf34fdb5dbfb,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 458136335}
-    - targetCorrespondingSourceObject: {fileID: 7666448512491557995, guid: 6eb18d9d451e45e4bb30bf34fdb5dbfb,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 458136334}
-    - targetCorrespondingSourceObject: {fileID: 7666448512491557995, guid: 6eb18d9d451e45e4bb30bf34fdb5dbfb,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 458136333}
-    - targetCorrespondingSourceObject: {fileID: 7666448512491557995, guid: 6eb18d9d451e45e4bb30bf34fdb5dbfb,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 458136332}
   m_SourcePrefab: {fileID: 100100000, guid: 6eb18d9d451e45e4bb30bf34fdb5dbfb, type: 3}
 --- !u!4 &429243363 stripped
 Transform:
@@ -3698,66 +3682,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &458136332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 458136318}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1492d24ff89246341b42871604270c31, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnFruitCollected:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &458136333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 458136318}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1492d24ff89246341b42871604270c31, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnFruitCollected:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &458136334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 458136318}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1492d24ff89246341b42871604270c31, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnFruitCollected:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &458136335
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 458136318}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1492d24ff89246341b42871604270c31, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnFruitCollected:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &466904874
 GameObject:
   m_ObjectHideFlags: 0
