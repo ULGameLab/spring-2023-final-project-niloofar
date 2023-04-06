@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class fruit : MonoBehaviour
 {
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -20,27 +21,20 @@ public class fruit : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        GameObject victim = collision.collider.gameObject;
-        if (victim != null)
+        if (collision.gameObject.CompareTag("Floor") || collision.gameObject.CompareTag("Player"))
         {
-            //GameObject.Find(victim.name)
-            
-            Debug.Log("fruit!");
-        }
-        Renderer[] allRenderers = gameObject.GetComponentsInChildren<Renderer>();
-        foreach (Renderer c in allRenderers) c.enabled = false;
-        Collider[] allColliders = gameObject.GetComponentsInChildren<Collider>();
-        foreach (Collider c in allColliders) c.enabled = false;
+             Renderer[] allRenderers = gameObject.GetComponentsInChildren<Renderer>();
+             foreach (Renderer c in allRenderers) c.enabled = false;
+             Collider[] allColliders = gameObject.GetComponentsInChildren<Collider>();
+             foreach (Collider c in allColliders) c.enabled = false;
 
-        StartCoroutine(PlayAndDestroy(1.0f));
-        if (collision.gameObject.tag == "Floor")
-        {
-            StartCoroutine(PlayAndDestroy(1.0f));
+             StartCoroutine(PlayAndDestroy(1.0f));
         }
+       
     }
     private IEnumerator PlayAndDestroy(float waitTime)
     {
-        
+       
         yield return new WaitForSeconds(waitTime);
         Destroy(gameObject);
     }

@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class sword : MonoBehaviour
 {
-    bool cut = false;
+    AudioSource Splatter;
 
     // Update is called once per frame
+    private void Start()
+    {
+        Splatter = GetComponent<AudioSource>();
+    }
     void Update()
     {
 
@@ -17,15 +21,15 @@ public class sword : MonoBehaviour
         if (victim != null)
         {
             //GameObject.Find(victim.name)
-            StartCutting();
-           // Debug.Log("Hello!");
+            Splatter.Play();
+            Debug.Log("Hello!");
             //check for previous project collision!
         }
     }
 
     void StartCutting()
     {
-        cut= true;
+       
     }
 
     
