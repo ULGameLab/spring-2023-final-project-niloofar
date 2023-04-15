@@ -10,15 +10,6 @@ public class fruit : MonoBehaviour
     {
         
     }
-
-    /* public void OnTriggerEnter(Collider other)
-     {
-         if (other.tag == "Player")
-         {
-             Debug.Log("CUT!");
-         }
-     }*/
-
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Floor") || collision.gameObject.CompareTag("Player"))
