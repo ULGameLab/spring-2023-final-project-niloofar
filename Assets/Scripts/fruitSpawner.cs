@@ -8,7 +8,7 @@ public class fruitSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //StartCoroutine(SpawnFruit());
+        StartCoroutine(SpawnFruit());
         
     }
 
@@ -26,7 +26,7 @@ public class fruitSpawner : MonoBehaviour
             //pos.x += Random.Range(-1f, 1f);
             go.transform.position = pos;
 
-            yield return new WaitForSeconds(10.8f);
+            yield return new WaitForSeconds(1.0f);
         }
     }
 
