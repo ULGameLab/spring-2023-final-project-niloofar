@@ -5,11 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class Bomb : MonoBehaviour
 {
+    AudioSource bomb;
     public int GameOver = 1;
     [SerializeField]
     public GameObject explosion;
 
-
+    void Start()
+    {
+        bomb = GetComponent<AudioSource>();
+    }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
@@ -20,7 +24,7 @@ public class Bomb : MonoBehaviour
             foreach (Renderer c in allRenderers) c.enabled = false;
             Collider[] allColliders = gameObject.GetComponentsInChildren<Collider>();
             foreach (Collider c in allColliders) c.enabled = false;
-
+            bomb.Play();
             StartCoroutine(EndGame(2.0f));
         }
         else if (collision.gameObject.CompareTag("Floor"))

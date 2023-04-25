@@ -6,7 +6,7 @@ public class fruitSpawner : MonoBehaviour
 {
     public GameObject[] fruitPrefab;
     
-    public float fruitSpawn;
+    public float fruitSpawn = 2.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,17 +21,12 @@ public class fruitSpawner : MonoBehaviour
     Debug.Log(Time.realtimeSinceStartup);
         switch (Time.realtimeSinceStartup)
         {
-            case <= 30:
-                fruitSpawn = 2.0f;
+            case >30 and <= 60:
+                fruitSpawn = 1.0f;
                 break;
             case >=60:
-                fruitSpawn = 0.8f;
+                fruitSpawn = 0.5f;
                 break;
-
-           /* case float n when (n >= 90):
-                fruitSpawn = 0.8f;
-                break;*/
-
         }
     }
 
