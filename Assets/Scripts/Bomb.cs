@@ -23,6 +23,10 @@ public class Bomb : MonoBehaviour
 
             StartCoroutine(EndGame(2.0f));
         }
+        else if (collision.gameObject.CompareTag("Floor"))
+        {
+            Destroy(gameObject);
+        }
            
     }
 

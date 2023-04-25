@@ -5,13 +5,34 @@ using UnityEngine;
 public class fruitSpawner : MonoBehaviour
 {
     public GameObject[] fruitPrefab;
-    //public float Timer= 5.0f;
-    //public float fruitSpawn = 2.0f;
+    
+    public float fruitSpawn;
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(SpawnFruit());
         
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+     //public float Timer = Time.realtimeSinceStartup;
+    Debug.Log(Time.realtimeSinceStartup);
+        switch (Time.realtimeSinceStartup)
+        {
+            case <= 30:
+                fruitSpawn = 2.0f;
+                break;
+            case >=60:
+                fruitSpawn = 0.8f;
+                break;
+
+           /* case float n when (n >= 90):
+                fruitSpawn = 0.8f;
+                break;*/
+
+        }
     }
 
     IEnumerator SpawnFruit()
@@ -28,13 +49,10 @@ public class fruitSpawner : MonoBehaviour
             //pos.x += Random.Range(-1f, 1f);
             go.transform.position = pos;
 
-            yield return new WaitForSeconds(2.0f);
+            yield return new WaitForSeconds(fruitSpawn);
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        //Timer = Timer.deltaTime();
-    }
+    
+   
 }
