@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Park/MainScene.unity
     guid: b88abed51b2d2454abab3ce71c0b5875
   - enabled: 1
-    path: Assets/Park/GameOver.unity
-    guid: 537636842ed87f142ae2a1bed6890155
+    path: Assets/Park/Game Over.unity
+    guid: b4934c525df35ea42b9939c0b3bf48dd
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}
