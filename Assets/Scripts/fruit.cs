@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class fruit : MonoBehaviour
 {
-   
+    AudioSource Splatter;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        Splatter = GetComponent<AudioSource>();
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -28,6 +29,7 @@ public class fruit : MonoBehaviour
 
             if (playerInventory != null)
             {
+                Splatter.Play();
                 playerInventory.FruitCollected();
 
             }

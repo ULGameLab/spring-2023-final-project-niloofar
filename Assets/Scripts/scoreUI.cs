@@ -14,7 +14,7 @@ public class scoreUI : MonoBehaviour
     //update the UI for score
     public void UpdateScore(playerInventory playerInventory)
     {
-        Score.text = "Score : " + playerInventory.NumberOfFruits.ToString();
+        Score.text = "    : " + playerInventory.NumberOfFruits.ToString();
     }
    
 }

@@ -25,7 +25,7 @@ public class Bomb : MonoBehaviour
             Collider[] allColliders = gameObject.GetComponentsInChildren<Collider>();
             foreach (Collider c in allColliders) c.enabled = false;
             bomb.Play();
-            StartCoroutine(EndGame(2.0f));
+            StartCoroutine(EndGame(1.0f));
         }
         else if (collision.gameObject.CompareTag("Floor"))
         {

@@ -18,7 +18,6 @@ public class fruitSpawner : MonoBehaviour
     void Update()
     {
      //public float Timer = Time.realtimeSinceStartup;
-    Debug.Log(Time.realtimeSinceStartup);
         switch (Time.realtimeSinceStartup)
         {
             case >30 and <= 60:
@@ -37,11 +36,10 @@ public class fruitSpawner : MonoBehaviour
             GameObject go = Instantiate(fruitPrefab[Random.Range(0,fruitPrefab.Length)]);
             Rigidbody temp = go.GetComponent<Rigidbody>();
 
-            temp.velocity = new Vector3(0f, 10f, .5f);
+            temp.velocity = new Vector3(0f, 7f, 1f);
             temp.useGravity= true;
 
             Vector3 pos = transform.position;
-            //pos.x += Random.Range(-1f, 1f);
             go.transform.position = pos;
 
             yield return new WaitForSeconds(fruitSpawn);
