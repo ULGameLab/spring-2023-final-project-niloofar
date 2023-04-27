@@ -29,9 +29,8 @@ public class fruit : MonoBehaviour
 
             if (playerInventory != null)
             {
-                Splatter.Play();
                 playerInventory.FruitCollected();
-
+                Splatter.Play();
             }
         }
 

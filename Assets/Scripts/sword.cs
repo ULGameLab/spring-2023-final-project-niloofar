@@ -21,7 +21,7 @@ public class sword : MonoBehaviour
         if (victim != null)
         {
             //GameObject.Find(victim.name)
-            Splatter.Play();
+            //Splatter.Play();
            // Debug.Log("Hello!");
             //check for previous project collision!
         }
