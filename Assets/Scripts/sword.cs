@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class sword : MonoBehaviour
-{
+{ //this is a test code
     AudioSource Splatter;
 
     // Update is called once per frame

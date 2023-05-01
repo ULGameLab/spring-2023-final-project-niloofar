@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Bomb : MonoBehaviour
 {
     AudioSource bomb;
-    public int GameOver = 2;
+    public int GameOver = 3;
     [SerializeField]
     public GameObject explosion;
 
@@ -15,7 +15,7 @@ public class Bomb : MonoBehaviour
         bomb = GetComponent<AudioSource>();
     }
     private void OnCollisionEnter(Collision collision)
-    {
+    { //if the player cut the bomb it will be exploded and destroyed and game over screen comes up
         if (collision.gameObject.CompareTag("Player"))
         {
             Instantiate(explosion, transform.position, Quaternion.identity);
@@ -40,13 +40,9 @@ public class Bomb : MonoBehaviour
 
         yield return new WaitForSeconds(waitTime);
         Destroy(gameObject);
-        SceneManager.LoadScene(GameOver);
+        SceneManager.LoadScene(3);
     }
    
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

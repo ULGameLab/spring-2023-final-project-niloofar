@@ -17,7 +17,7 @@ public class fruitSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     //public float Timer = Time.realtimeSinceStartup;
+     //the rate of generating the fruit will be increased based on the time 
         switch (Time.realtimeSinceStartup)
         {
             case >30 and <= 60:
@@ -30,7 +30,7 @@ public class fruitSpawner : MonoBehaviour
     }
 
     IEnumerator SpawnFruit()
-    {
+    { // Generating the fruits
         while (true)
         {
             GameObject go = Instantiate(fruitPrefab[Random.Range(0,fruitPrefab.Length)]);

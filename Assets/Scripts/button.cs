@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class button : MonoBehaviour
 {
-    // Build number of scene to start when start btn is pressed
+    // Build number of scenes to start when  btn is pressed
     public int StartScene = 0;
-    public int Instructions = 1;
+    public int GuideScene = 1;
     public int MainScene = 2;
     public int GameOver = 3;
     // handling the buttons & other scenes
@@ -24,7 +24,7 @@ public class button : MonoBehaviour
 
     public void LoadInstruction()
     {
-        SceneManager.LoadScene(Instructions);
+        SceneManager.LoadScene(GuideScene);
     }
 
     public void StartMenu()
