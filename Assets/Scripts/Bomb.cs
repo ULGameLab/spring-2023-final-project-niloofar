@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Bomb : MonoBehaviour
 {
     AudioSource bomb;
-    public int GameOver = 1;
+    public int GameOver = 2;
     [SerializeField]
     public GameObject explosion;
 

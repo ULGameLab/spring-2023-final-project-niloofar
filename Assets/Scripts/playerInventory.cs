@@ -6,7 +6,7 @@ using static UnityEngine.EventSystems.EventTrigger;
 
 public class playerInventory : MonoBehaviour
 {
-    public int NumberOfFruits { get; private set; }
+    public int NumberOfFruits { get; private set; } 
     public UnityEvent<playerInventory> OnFruitCollected;
     // Start is called before the first frame update
     void Start()

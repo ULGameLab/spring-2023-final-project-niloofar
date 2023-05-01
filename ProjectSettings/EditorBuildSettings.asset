@@ -6,11 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Park/Start.unity
+    guid: 0f1a0c16e1abbf843bb5b2e271611531
+  - enabled: 0
+    path: Assets/Park/Instructions.unity
+    guid: bd10090afe3179347b83e584c6defe46
+  - enabled: 1
     path: Assets/Park/MainScene.unity
     guid: b88abed51b2d2454abab3ce71c0b5875
   - enabled: 1
-    path: Assets/Park/Game Over.unity
-    guid: b4934c525df35ea42b9939c0b3bf48dd
+    path: Assets/Park/GameOver.unity
+    guid: 3b38e477b94b57a4597ed661f934e90a
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}
